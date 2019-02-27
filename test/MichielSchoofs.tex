@@ -1,0 +1,26 @@
+\documentclass[12pt,twoside,a4paper]{article}
+\author{Michiel Schoofs}
+\title{Dit is een voorbeeld}
+\date{\today}
+\usepackage{graphicx}
+\usepackage[dutch]{babel}
+
+\begin{document}
+\maketitle
+\section{Dit is een titel}
+\label{sec:intro}
+ajzlkejalze
+\subsection{Dit is nog iets}
+
+Dit is een referentie naar \ref{sec:intro}
+\begin{enumerate}
+	\item Dit is een item
+	\item Dit is nog een item
+\end{enumerate}
+\begin{figure}[h]
+	\includegraphics[width=0.2\textwidth,height=0.2\textheight]{bojack.jpg}
+	\caption{Dit is bojack hij is sad}
+	\label{fig:rick}
+\end{figure}
+Dit is bojack bojack vind je in figuur \ref{fig:rick}
+\end{document}
