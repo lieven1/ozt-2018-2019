@@ -6,15 +6,15 @@
 \usepackage{graphicx}
 
 
-
-
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{bib/test.bib}
 
 
 \begin{document}
     
     \maketitle
     \tableofcontents
-    
+    \newpage
     \section{Voorwoord}
     
     Random Citation \cite{Auteur2019} embedded in text.
@@ -29,7 +29,6 @@
     \newpage
     \section{Referenties}
 
-    \bibliographystyle{apacite}
-    \bibliography{/paper/bib/test.bib}
+    \printbibliography
     
 \end{document}
