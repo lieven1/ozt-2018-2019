@@ -3,8 +3,14 @@
 \title{Literatuurstudie - Paper Onderzoekstechnieken}
 \date{\today}
 \usepackage[dutch]{babel}
+
 \usepackage{graphicx}
+\graphicspath{{./grafieken/}}
+
 \usepackage{nameref}
+
+%new command section
+\newcommand{\customref}[1]{\underline{\ref{#1}: \nameref{#1}}}
 
 \usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{bibliografie.bib}
@@ -31,7 +37,8 @@
     Om bovenstaande variabelen te kunnen gebruiken in onze conclusies moeten we ook uitlijnen hoe we deze willen gaan testen. Onder deze sectie vindt u een voorstel over hoe we deze verschillende variabelen op een empirische manier zouden kunnen meten.
     
 	    \subsection{Meten van geheugencapaciteit}
-	    Naar aanleiding van het artikel van \cite{Agarwal2016} gaan we onderzoeken of er een correlatie is tussen de geheugencapaciteit en de doeltreffendheid van Retrieval Practice. -Voor meer informatie zie ook sectie \ref{geheugencapaciteit}: \nameref{geheugencapaciteit}.- We moeten echter eerst verduidelijken hoe we deze capaciteit zouden gaan meten in onze testgroepen.\\
+	    \label{methodology-gc}
+	    Naar aanleiding van het artikel van \cite{Agarwal2016} gaan we onderzoeken of er een correlatie is tussen de geheugencapaciteit en de doeltreffendheid van Retrieval Practice. -Voor meer informatie zie ook sectie \customref{geheugencapaciteit}.- We moeten echter eerst verduidelijken hoe we deze capaciteit zouden gaan meten in onze testgroepen.\\
 	    \par
 	    \noindent
 	    We kunnnen gebruik maken van een woordenlijst van 25 woorden elk toenemend in lengte. De proefpersoon in kwestie krijgt 5 minuten om de woordenlijst te memoriseren en wordt vervolgens gevraagd om deze te reproduceren.Daarna wordt een score toegekend volgens volgend principe: Een volledig correct geschreven woord krijgt 2 punten, een woord dat fonetisch correct is krijgt 1 punt.\\
@@ -40,7 +47,7 @@
 	    Door deze methode te hanteren zijn we instaat om de groep in twee delen op te splitsen. De groep die hoger scoorde dan de mediaan bestempelen we als \textit{Hoge geheugencapaciteit} de overige groep benoemen we als \textit{Lage geheugencapaciteit}
 	    
       	\subsection{Hervorming van de retentie test}
-      	We gaan eveneens de retentie test veranderen. Dit doen we naar aanleiding van het artikel geschreven door \cite{TamaravanGog2012}. Concreet willen we het type van memorisatie (ROTE of Meaningful) door Retrieval Practice gaan bestuderen. -Voor meer informatie zie sectie \ref{RoteVSMeaningful}: \nameref{RoteVSMeaningful}.-\\
+      	We gaan eveneens de retentie test veranderen. Dit doen we naar aanleiding van het artikel geschreven door \cite{TamaravanGog2012}. Concreet willen we het type van memorisatie (ROTE of Meaningful) door Retrieval Practice gaan bestuderen. -Voor meer informatie zie sectie \customref{RoteVSMeaningful}.-\\
       	
       	\par
       	\noindent
@@ -99,11 +106,20 @@
     	
     	\subsection{Grafieken}
     	
-    	De grafieken die we gebruiken zijn opgedeeld in twee groepen (uitgeleind in sectie \ref{methodology}: \nameref{methodology}):
+    	De grafieken die we gebruiken zijn opgedeeld in twee groepen (uitgeleind in sectie \customref{methodology-gc}):
     	\begin{itemize}
-    		\item De groep met een \textit{lage geheugencapaciteit}: Dit is de testgroep die op de voorafgenomen woordenlijst onder de mediaan scoorde. Deze testgroep zit dus met andere woorden in de laagste 50\% van de afgenomen testen betreffende hun score.
-    		\item De groep met een \textit{hoge geheugencapaciteit}: Dit is de groep die boven de mediaan scoorde. Kortom de groep die bij de hoogste 50\% zit qua hun score op de woordenlijst.
+    		\item De groep met een \textit{lage geheugencapaciteit (LGC)}: Dit is de testgroep die op de voorafgenomen woordenlijst onder de mediaan scoorde. Deze testgroep zit dus met andere woorden in de laagste 50\% van de afgenomen testen betreffende hun score.
+    		\item De groep met een \textit{hoge geheugencapaciteit (HGC)}: Dit is de groep die boven de mediaan scoorde. Kortom de groep die bij de hoogste 50\% zit qua hun score op de woordenlijst.
     	\end{itemize}
+    
+    	\newpage
+    	\subsubsection{Mock Grafieken HGC} 
+    	\begin{figure}[h]
+    		\includegraphics[width=8cm]{grafiek1}
+    		\caption{HGC Graiek SSSS}
+    		\includegraphics[width=8cm]{grafiek3}
+    	\end{figure}
+
     \newpage
     \section{Referenties}
     
