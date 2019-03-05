@@ -8,7 +8,7 @@
 \graphicspath{{./grafieken/}}
 
 \usepackage{nameref}
-
+\usepackage{subcaption}
 %new command section
 \newcommand{\customref}[1]{\underline{\ref{#1}: \nameref{#1}}}
 
@@ -106,6 +106,7 @@
     	
     	\subsection{Grafieken}
     	
+    	\subsubsection{Uitleg}
     	De grafieken die we gebruiken zijn opgedeeld in twee groepen (uitgeleind in sectie \customref{methodology-gc}):
     	\begin{itemize}
     		\item De groep met een \textit{lage geheugencapaciteit (LGC)}: Dit is de testgroep die op de voorafgenomen woordenlijst onder de mediaan scoorde. Deze testgroep zit dus met andere woorden in de laagste 50\% van de afgenomen testen betreffende hun score.
@@ -113,11 +114,16 @@
     	\end{itemize}
     
     	\newpage
-    	\subsubsection{Mock Grafieken HGC} 
+    	\subsubsection{Grafieken} 
     	\begin{figure}[h]
-    		\includegraphics[width=8cm]{grafiek1}
-    		\caption{HGC Graiek SSSS}
-    		\includegraphics[width=8cm]{grafiek3}
+    		\begin{subfigure}{0.6\textwidth}
+    			\includegraphics[width=\linewidth]{grafiek1}
+    			\caption{HGC Grafiek SSSS}
+    		\end{subfigure}
+    		\begin{subfigure}{0.6\textwidth}
+    			\includegraphics[width=\linewidth]{grafiek3}
+    			\caption{HGC Grafiek SSST}
+    		\end{subfigure}
     	\end{figure}
 
     \newpage
