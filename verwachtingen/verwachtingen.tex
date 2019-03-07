@@ -1,35 +1,48 @@
-\documentclass[12pt,a4paper]{article}
-\author{Wannes {De Craene} \and Michiel Schoofs \and Lieven {Van Loo} \and Wannes Sergeant}
-\title{Literatuurstudie - Paper Onderzoekstechnieken}
+\documentclass{hogent-article}
 \date{\today}
-\usepackage[dutch]{babel}
 
+
+\usepackage[dutch]{babel}
 \usepackage{graphicx}
 \graphicspath{{./grafieken/}}
-
 \usepackage{nameref}
 \usepackage{subcaption}
 %new command section
 \newcommand{\customref}[1]{\underline{\ref{#1}: \nameref{#1}}}
-
 \usepackage[backend=biber,style=apa]{biblatex}
-\addbibresource{bibliografie.bib}
+%\addbibresource{bibliografie.bib}.
+\usepackage{lipsum}
+
+\PaperTitle{Literatuurstudie - Onderzoekstechnieken}
+\PaperType{Literatuurstudie Onderoekstechnieken 2018-2019}
+\Authors{Wannes {De Craene}\textsuperscript{1},Michiel Schoofs\textsuperscript{2}, Lieven {Van Loo}\textsuperscript{3}, Wannes Sergeant\textsuperscript{4}}
+
+\CoPromotor{}
+
+\Abstract{
+    In dit artikel vind u de literatuurstudie nodig voor het onderzoeken van het effect van Retrieval Practice op het behouden van kennis. Het is belangerijk om een zo goed mogelijke studiehouding te hebben als student, wat tevens ook de reden is voor dit onderzoek. We beschrijven dus de onderzoeksvraag, benodigde variabelen, onze bronnen en de hypothese.
+}
+
+\Keywords{Onderzoekstechnieken; Retrieval Practice; Rote; Meaningful; Learning}
+
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
 
 \begin{document}
-    
+
+    \flushbottom
     \maketitle
-    
     \tableofcontents
+    \thispagestyle{empty}
 
     \newpage
     \section{Inleiding}
     
     Voor ons onderzoek over Retrieval Practice hebben wij eerst een literatuurstudie gemaakt om duidelijk uit te lijnen wat wij juist verwachten van het experiment zelf.
     \subsection{Variabelen}
-    Concreet hebben wij beslist om een extra variabelen te gaan introduceren namelijk de geheugen capaciteit van het proefpubliek. Ook hebben wij beslist om de retentie test te hervormen volgens twee principes: Rote en Meaningful Learning (lees als uit het hoofd leren en kunnen toepassen).\\
+    Concreet hebben wij beslist om een extra variabele te gaan introduceren, namelijk de geheugencapaciteit van het proefpubliek. Ook hebben wij beslist om de retentietest te hervormen volgens twee principes: Rote en Meaningful Learning (lees als uit het hoofd leren en kunnen toepassen).\\
     \par
 	\noindent    
-    Verder delen we de proefpersonen op in drie delen, idem aan het originele experiment door \cite{HenryRoediger2006}, Deze zijn: Study-Study-Study-Study, Study-Study-Study-Test  en Study-Test-Test-Test. 
+    Verder delen we de proefpersonen op in drie groepen, idem aan het originele experiment door \cite{HenryRoediger2006}, Deze zijn: Study-Study-Study-Study, Study-Study-Study-Test  en Study-Test-Test-Test. 
     \subsection{Verwachte conclusies}
     
     \section{Methodologie}
@@ -41,7 +54,7 @@
 	    Naar aanleiding van het artikel van \cite{Agarwal2016} gaan we onderzoeken of er een correlatie is tussen de geheugencapaciteit en de doeltreffendheid van Retrieval Practice. -Voor meer informatie zie ook sectie \customref{geheugencapaciteit}.- We moeten echter eerst verduidelijken hoe we deze capaciteit zouden gaan meten in onze testgroepen.\\
 	    \par
 	    \noindent
-	    We kunnnen gebruik maken van een woordenlijst van 25 woorden elk toenemend in lengte. De proefpersoon in kwestie krijgt 5 minuten om de woordenlijst te memoriseren en wordt vervolgens gevraagd om deze te reproduceren.Daarna wordt een score toegekend volgens volgend principe: Een volledig correct geschreven woord krijgt 2 punten, een woord dat fonetisch correct is krijgt 1 punt.\\
+	    We kunnnen gebruik maken van een woordenlijst van 25 woorden elk toenemend in lengte. De proefpersoon in kwestie krijgt 5 minuten om de woordenlijst te memoriseren en wordt vervolgens gevraagd om deze te reproduceren. Daarna wordt een score toegekend volgens volgend principe: Een volledig correct geschreven woord krijgt 2 punten, een woord dat fonetisch correct is krijgt 1 punt.\\
 	    \par
 	    \noindent
 	    Door deze methode te hanteren zijn we instaat om de groep in twee delen op te splitsen. De groep die hoger scoorde dan de mediaan bestempelen we als \textit{Hoge geheugencapaciteit} de overige groep benoemen we als \textit{Lage geheugencapaciteit}
@@ -52,7 +65,7 @@
       	\par
       	\noindent
       	
-    \newpage
+    
     \section{Literatuurstudie}
     
     Voor we kunnen van start gaan met het onderzoek moeten we eerst een literatuurstudie schrijven om duidelijk uit te lijnen wat we precies verwachten. We geven dus wat meer uitleg rond het algemene doel van ons experiment en de gekozen variabelen.
@@ -122,7 +135,7 @@
     		\item De groep met een \textit{hoge geheugencapaciteit (HGC)}: Dit is de groep die boven de mediaan scoorde. Kortom de groep die bij de hoogste 50\% zit qua hun score op de woordenlijst.
     	\end{itemize}
     
-    	\newpage
+    	
     	\subsubsection{Grafieken} 
 		\begin{figure}[h]
 			\begin{subfigure}{0.6\textwidth}
@@ -139,9 +152,10 @@
 			\end{subfigure}
 			\caption{Grafieken van de Hoge Geheugencapaciteit groep}
 		\end{figure}
-    \newpage
-    \section{Referenties}
     
-	\printbibliography
+  
+    
+    \phantomsection
+	\printbibliography[heading=bibintoc]
     
 \end{document}
