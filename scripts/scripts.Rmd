@@ -57,13 +57,15 @@ boxplot(scores_Week2~test2, data=ozt, xlab="Aantal uur slaap", ylab="scores", ma
 
 Dit zijn de grafieken waarin we bekijken wat het effect is van muziek op zowel studenten die met en zonder retrieval practise gestudeerd hebben.
 
-```{r ozt}
-scores_Week1 <- ozt$score_1
-scores_Week2 <- ozt$score_2
+```{r ozt2}
+scores_Week1 <- ozt2$score_1
+scores_Week2 <- ozt2$score_2
 
-rt <- ozt$rt
+rt <- trimws(ozt2$rt)
 
-muziek <- ozt$muziek
+
+muziek <- trimws(ozt2$muziek)
+
 
 ScoresMandRt <- subset(scores_Week1, muziek=="Ja" & rt=="Ja")
 ScoresMNoRt<- subset(scores_Week1, muziek=="Ja" & rt=="Nee")
