@@ -148,7 +148,7 @@ Verder hebben we ook boxplots gemaakt waarin we scores in 4 groepen onderverdeel
 
 \subsection{Slaap hoeveelheid}
 
-Hierbij kwamen we tot de volgende grafieken voor week 1 en week 2:
+\subsubsection{Het effect van slaap op het instuderen van de leerstof. (Week 1)}
 
 \begin{figure}[H]
 	\begin{subfigure}{0.45\textwidth}
@@ -156,13 +156,16 @@ Hierbij kwamen we tot de volgende grafieken voor week 1 en week 2:
 	\end{subfigure}
 \end{figure}
 
-Hieruit kun je verschillende dingen afleiden, namelijk:
-
-\subsubsection{Het effect van slaap op het instuderen van de leerstof. (Week 1)}
 
 Hier kun je duidelijk zien dat slaap geen grote invloed heeft, maar er wel degelijk een invloed is, zo zie je dat het merendeel van de scores van mensen met minder dan 5 uur slaap toch iets lager liggen dan van mensen die voldoende slaap gehad hebben. Dit waarschijnlijk omdat het instuderen toch net iets moeilijker gaat als je weinig slaap hebt gehad
 
 \subsubsection{Het effect van slaap op het behouden van ingestudeerde leerstof. (Week 2)}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{slaapGraph2}
+	\end{subfigure}
+\end{figure}
 
 Bij de tweede week is dit verschil nagenoeg volledig weggewerkt, voor het oproepen van kennis die men dus al heeft ingestudeerd maakt de hoeveelheid slaap dus eigenlijk niet echt uit.
 
@@ -172,29 +175,45 @@ Deze werden idem aan de voorgaande dataset ook geplot in R aan de hand van versc
 
 \subsubsection{De mate waarin je leerstof voor korte termijn kunt instuderen (Week 1)}
 
-Eerst en vooral bekijken we welke invloed zowel Retrieval practice als Muziek hebben op het instuderen van leerstof.
+\begin{figure}[H]
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{muziekGraph1}
+	\end{subfigure}
+\end{figure}
 
+Eerst en vooral bekijken we welke invloed zowel Retrieval practice als Muziek hebben op het instuderen van leerstof.
+\\
 \begin{itemize}
     \item Eerst en vooral hebben we het gebruik van muziek tegenover geen muziek.
     Hieruit kunnen we verrassend genoeg toch afleiden dat muziek een positief effect lijkt te hebben op het instuderen van de leerstof, aangezien de scores voor mensen die muziek gebruikt hebben om het gevraagde in te studeren een hogere score hebben, al dan niet met retrieval practice of niet, dan mensen die niet naar muziek geluisterd hebben.
+    \\
     \item Hierna bekijken we het verschil tussen Retrieval Practice tegenover geen Retrieval Practice.
-    Hier ziet men in de eerste testweek geen verschil tussen het al dan niet gebruiken van Retrieval Practice, tot dusver komt dit dus nog overeen met het originele artikel van Karpicke en Roediger waarop dit onderzoek gestaafd is.
+    Hier ziet men in de eerste testweek geen verschil tussen het al dan niet gebruiken van Retrieval Practice, tot dusver komt dit dus nog overeen met het originele artikel \textcite{Roediger2006} waarop dit onderzoek gestaafd is.
     
 \end{itemize}
 
 \subsubsection{De mate waarin je kennis behoud op iets langere termijn (Week 2)}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.50\textwidth}
+		\includegraphics[width=\linewidth]{muziekGraph2}
+	\end{subfigure}
+\end{figure}
 
 Als laatste bestuderen we de grafiek voor de tweede week en kijken we bij welke methodes je kunt zien dat er toch een groter behoud aan kennis is.
 
 
 \begin{itemize}
     \item Het gebruik van muziek tegenover geen muziek. Bij de tweede week is het “antwoord” toch niet meer zo eenduidig als het op muziek of geen muziek aankomt. Het verschil is aanzienlijk gezakt, wat toch blijk geeft dat indien men naar muziek luisterde in de eerste week men iets minder goed gememoriseerd heeft. Terwijl mensen die niet naar muziek luisteren wel net iets beter erin geslaagd zijn om hun kennis te behouden.
-    
+    \\
+    \par
+    \noindent
     Men ziet ook dat het al dan niet luisteren naar muziek niet echt een effect heeft op het oproepen van deze ingestudeerde kennis.
-    
-    \item Retrieval Practice tegenover geen Retrieval Practice. Hier is er ondertussen wel een duidelijk verschil zichtbaar, men ziet dat mensen die retrieval practice gebruikt hebben in de eerste week nu wel aanzienlijk beter scoren dan mensen die dit niet gedaan hebben, met uitzondering van mensen die geen retrieval practice hebben toegepast maar wel naar muziek hebben geluisterd, die even goed scoren als de groep die retrieval practice heeft gebruikt. 
-    
-    Hieruit kun je afleiden dat het al zeker beter is om retrieval practice toe te passen bij het instuderen, dan helemaal niets, wat overeenkomt met het originele artikel van Karpicke \& Roediger, maar dat het gebruik van enkel muziek (in dit geval erg rustige mozart) ook geen nefast effect heeft op het behouden van eerder verworven kennis.
+    \\
+    \item Retrieval Practice tegenover geen Retrieval Practice. Hier is er ondertussen wel een duidelijk verschil zichtbaar, men ziet dat mensen die retrieval practice gebruiken hebben in de eerste week nu wel aanzienlijk beter gescoort dan mensen die dit niet gedaan hebben, met uitzondering van mensen die geen retrieval practice hebben toegepast maar wel naar muziek hebben geluisterd, die even goed scoren als de groep die retrieval practice heeft gebruikt. \\
+    \par
+    \noindent
+    Hieruit kun je afleiden dat het al zeker beter is om retrieval practice toe te passen bij het instuderen, dan helemaal niets, wat overeenkomt met het originele artikel van \textcite{Roediger2006}, maar dat het gebruik van enkel muziek (in dit geval klassieke muziek ook wel sedative music genoemd zoals uitgelijnd in het artikel van \textcite{Dolegui2013}) ook geen nefast effect heeft op het behouden van eerder verworven kennis.
     
 \end{itemize}
     
