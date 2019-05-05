@@ -103,44 +103,46 @@ Buiten de invloed van slaap bestuderen we ook het effect van muziek bij het leer
 \par
 \noindent
 Om ons onderzoek aldus te gaan samenvatten gaan we gebruik maken van drie variabelen om conclusies te gaan trekken namelijk muziek, de uren van slaap en retrieval practice ten opzichte van klassieke studiemethodes. We verwachten dat studenten die een goede nachtrust hebben gehad (om en bij de 8 uur) beter gaan scoren dan degene met een slechtere nachtrust. We verwachten dat de groep die naar muziek luistert slechter scoort dan de groep zonder muziek en tot slot verwachten we ook zoals de studies van \textcite{Roediger2006} dat we het testing effect gaan waarnemen.
-
-
-
-
-% Refereren naar de literatuur kan met:
-% \autocite{BIBTEXKEY} -> (Auteur, jaartal)
-% \textcite{BIBTEXKEY} -> Auteur (jaartal)
-
 \section{Hypothese}
 
 \subsection{Variabelen}
-
 Aangezien onze hypothese in de literatuurstudie enkele variabelen had die niet zijn opgenomen geweest in het experiment hebben we deze toch aanzienlijk moeten aanpassen.
 \\
-\par
+\\
 \noindent
 We hebben uiteindelijk beslist om het originele onderzoek, of Retrieval Practice al dan niet een effect heeft of niet uit te voeren, samen met het effect van muziek hierop en verder hebben we ook beslist om het effect van slaap op de uiteindelijke scores te bekijken.
 
 \subsubsection{Hypothese omtrent slaap hoeveelheid}
+\begin{figure}[H]
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{hypotheseGraph1}
+		\caption{Conclusie studie Potkin en Bunney(2012)}
+	\end{subfigure}
+\end{figure}
 
-INSERT GRAFIEK
-
-Zoals je kan afleiden uit de boxplot uit week 1 omtrent slaap hoeveelheid verwachten we duidelijk dat mensen met een tekort aan slaap veel minder sterk zijn in het opnemen van nieuwe informatie. Maar in week 2 verwachten we eigenlijk dat het verschil iets minder groot zal zijn indien men iets minder slaap dan nodig heeft gehad, dit omdat men reeds het onderwerp heeft ingestudeerd op een voorgaand moment en men de kennis dus reeds heeft, men moet het enkel nog oproepen. Dit baseerden we op het artikel van Potkin \& Bunney
+Zoals je kan afleiden uit de boxplot uit week 1 omtrent slaap hoeveelheid verwachten we duidelijk dat mensen met een tekort aan slaap veel minder sterk zijn in het opnemen van nieuwe informatie. Maar in week 2 verwachten we eigenlijk dat het verschil iets minder groot zal zijn indien men iets minder slaap dan nodig heeft gehad, dit omdat men reeds het onderwerp heeft ingestudeerd op een voorgaand moment en men de kennis dus reeds heeft, men moet het enkel nog oproepen. Dit baseerden we op het artikel van \textcite{Potkin2012}.
 
 
 \subsubsection{Hypothese omtrent muziek en Retrieval Practice}
+\begin{figure}[H]
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=0.8\linewidth]{hypotheseGraph2}
+		\caption{Conclusie studie Roediger en Karpicke(2006)}
+	\end{subfigure}
+\end{figure}
 
-INSERT GRAFIEK
-
-In week 1 verwachten we dat mensen die niet naar muziek luisteren het aanzienlijk beter doen dan mensen die wel naar muziek luisteren, dit gestaafd op het artikel van Arielle S. Dolegui, het effect van retrieval practice in vergelijking met geen retrieval practice is hier nog niet zichtbaar.
-
-In week 2 verwachten we dan weer meer een onderscheid tussen retrieval practice en geen retrieval practice, omdat men enkel kennis moet oproepen denken we dat muziek hier dus een kleiner effect heeft dan de invloed van retrieval practice. We denken dus dat retrieval practice hier zal uitblinken zoals je ook kan zien op de grafieken. Dit denken we vooral door het originele artikel van Roediger \& Koepricke
+In week 1 verwachten we dat mensen die niet naar muziek luisteren het aanzienlijk beter doen dan mensen die wel naar muziek luisteren, dit gestaafd door het artikel van \textcite{Dolegui2013}, het effect van retrieval practice in vergelijking met geen retrieval practice is hier nog niet zichtbaar.\\
+\par
+\noindent
+In week 2 verwachten we dan weer meer een onderscheid tussen retrieval practice en geen retrieval practice, omdat men enkel kennis moet oproepen denken we dat muziek hier dus een kleiner effect heeft dan de invloed van retrieval practice. We denken dus dat retrieval practice hier zal uitblinken zoals je ook kan zien op de grafieken. Dit denken we vooral door het originele artikel van \textcite{Roediger2006}.
 \section{Data}
 
-Welke data hebben we nu juist onderzocht? Wel, zoals voordien vermeld hebben we eerst en vooral gekeken naar de verschillen tussen het niet gebruiken van “Retrieval Practice” en het wel gebruiken van deze methode, hierbij hebben we ook het effect van Muziek toegevoegd. Verder hebben we ook een apart onderzoek gedaan waarbij we opzoek gingen naar het effect dat de hoeveelheid slaap heeft op scores, losstaand van alle andere variabelen.
-
-Eerst en vooral hebben we dus een script geschreven in R om het effect van slaap hoeveelheid te testen, hierbij hebben we drie verschillende ranges gedefinieerd: 0 tot 5 uur slaap, 5 tot 8 uur slaap en meer dan 8 uur slaap. 
-
+Welke data hebben we nu juist onderzocht? Wel, zoals voordien vermeld hebben we eerst en vooral gekeken naar de verschillen tussen het niet gebruiken van “Retrieval Practice” en het wel gebruiken van deze methode, hierbij hebben we ook het effect van Muziek toegevoegd. Verder hebben we ook een apart onderzoek gedaan waarbij we opzoek gingen naar het effect dat de hoeveelheid slaap heeft op scores, losstaand van alle andere variabelen.\\
+\par
+\noindent
+Eerst en vooral hebben we dus een script geschreven in R om het effect van slaap hoeveelheid te testen, hierbij hebben we drie verschillende ranges gedefinieerd: 0 tot 5 uur slaap, 5 tot 8 uur slaap en meer dan 8 uur slaap.\\
+\par
+\noindent
 Verder hebben we ook boxplots gemaakt waarin we scores in 4 groepen onderverdeeld hebben, zo zien we een boxplot met scores waarbij men enkel naar muziek heeft geluisterd, een boxplot waarbij men naar muziek luisterde en Retrieval Practice heeft toegepast, een boxplot waarbij men enkel retrieval practice gebruikte en een boxplot met de overige scores
 \section{Verklaringen}
 
@@ -148,8 +150,11 @@ Verder hebben we ook boxplots gemaakt waarin we scores in 4 groepen onderverdeel
 
 Hierbij kwamen we tot de volgende grafieken voor week 1 en week 2:
 
-Insert R
-
+\begin{figure}[H]
+	\begin{subfigure}{0.45\textwidth}
+		\includegraphics[width=\linewidth]{slaapGraph1}
+	\end{subfigure}
+\end{figure}
 
 Hieruit kun je verschillende dingen afleiden, namelijk:
 
