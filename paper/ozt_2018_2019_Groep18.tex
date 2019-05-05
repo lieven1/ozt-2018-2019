@@ -15,6 +15,12 @@
 
 \documentclass{hogent-article}
 
+%------------------------------------------------------------------------------
+%Custom Commando's
+%------------------------------------------------------------------------------
+\newcommand{\boldit}[1]{\emph{\textbf{#1}}} 
+\newcommand{\customref}[1]{\underline{\ref{#1}: \nameref{#1}}}
+
 \usepackage{lipsum} % Voor vultekst
 
 %------------------------------------------------------------------------------
@@ -24,7 +30,7 @@
 %---------- Titel & auteur ----------------------------------------------------
 
 % TODO: geef werktitel van je eigen voorstel op
-\PaperTitle{Retrieval practice}
+\PaperTitle{Studeren doe je beter uitgerust, in stilte aan de hand van Retrieval Practice}
 % TODO: geef op welk soort artikel dit is
 % Dit is typisch de opdracht en het vak waarvoor dit artikel geschreven is, bv.
 % ``Verslag onderzoeksproject Onderzoekstechnieken 2018-2019''
@@ -33,30 +39,28 @@
 % TODO: vul je eigen naam in als auteur, geef ook je emailadres mee!
 \Authors{Wannes {De Craene}\textsuperscript{1},Michiel Schoofs\textsuperscript{2}, Lieven {Van Loo}\textsuperscript{3}, Wannes Sergeant\textsuperscript{4}}
 
-% TODO: vul de naam van je co-promotor in.
-% Als het hier gaat om een voorstel voor de bachelorproef, dan ben je hier
-% verplicht de naam van je co-promotor in te vullen. Zoniet, dan kan je het
-% leeg laten.
-\CoPromotor{}
+
 
 % Contactinfo: Geef hier de contactgegevens van elke auteur van het artikel (en
 % indien van toepassing ook van de co-promotor).
 \affiliation{
   \textsuperscript{1} \href{mailto:wannes.decraene.y0550@student.hogent.be}{mailto:wannes.decraene.y0550@student.hogent.be}
+  \textsuperscript{2}
+  \href{mailto:michiel.schoofs@student.hogent.be}{mailto:michiel.schoofs@student.hogent.be}
+  \textsuperscript{3} \href{mailto:lieven.vanloo@student.hogent.be}{mailto:lieven.vanloo@student.hogent.be}
+  \textsuperscript{4} \href{mailto:wannes.sergeant@student.hogent.be}{mailto:wannes.sergeant@student.hogent.be}
 }
 
 %---------- Abstract ----------------------------------------------------------
 
-\Abstract{Hier schrijf je de samenvatting van je artikel, als een doorlopende tekst van één paragraaf. Wat hier zeker in moet vermeld worden: \textbf{Context} (Waarom is dit werk belangrijk?); \textbf{Nood} (Waarom moet dit onderzocht worden?); \textbf{Taak} (Wat ga je (ongeveer) doen?); \textbf{Object} (Wat staat in dit document geschreven?); \textbf{Resultaat} (Wat verwacht je van je onderzoek?); \textbf{Conclusie} (Wat verwacht je van van de conclusies?); \textbf{Perspectief} (Wat zegt de toekomst voor dit werk?).
-
-Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoorden die je werk beschrijven.
+\Abstract{In dit onderzoek gaan wij kijken of retrieval practice, muziek en slaap een effect hebben op de retentie van gestudeerde stof. Dit  doen we omdat het toch een heel nuttig onderwerp is voor studenten, het is altijd handig om te kijken of we wel een optimale studie strategie toepassen, deze studie is een leidraad voor beter te studeren. Concreet gaan we dus een experiment uitvoeren om het effect van de drie voornoemde variabelen te testen, hierbij verwachten we een positief resultaat indien men retrieval practice toepast, een negatief resultaat indien men weinig slaap heeft of met muziek heeft gewerkt. Dit zou dan ook onze conclusie zijn. Aangezien erg veel studenten kampen met studieproblemen binnen hoger onderwijs zou dit onderzoek hen kunnen helpen met het makkelijker behalen van hun diploma door middel van een betere en wetenschappelijk gefundeerde studiemethode.
 }
 
 %---------- Onderzoeksdomein en sleutelwoorden --------------------------------
 % TODO: Vul de sleutelwoorden aan.
 
 
-\Keywords{Onderzoekstechnieken; Retrieval Practice; Rote; Meaningful; Learning}
+\Keywords{Retrieval Practice; Slaap hoeveelheid; Muziek; Testing Effect; Studeren; Geheugen Retentie; Behouden van Kennis;Studie methodiek; Pedagogie; Onderwijs }
 \newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
 
 %---------- Titel, inhoud -----------------------------------------------------
@@ -72,6 +76,10 @@ Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoor
 % Hoofdtekst
 %------------------------------------------------------------------------------
 \section{Voorwoord}
+Studeren kan je leren. Een vaak herhaalde zin en een halve waarheid volgens de meeste. Toch is niets minder waar. We kennen allemaal het moeilijke moment waarbij je in hogere studies wordt geconfronteerd met grote hoeveelheden leerstof. Je propt het in je hoofd en vergeet het terug onmiddellijk na het examen, en zo gaat dat drie tot vijf jaar in het beste geval, maar wat als het beter kan? Door middel van de wetenschappelijke methode proberen we een betere richtlijn mee te geven voor doorwinterde studenten zoals ons.\\
+\par
+\noindent
+Graag willen we ook familie en vrienden bedanken voor het nalezen en het coachen doorheen onze academische carrière.
 
 \section{Inleiding}
 
@@ -81,15 +89,12 @@ Indien er een typerend aspect is van het studentenleven is het dan ook studeren.
 We focussen ons voornamelijk op de manier waarop men effectief studeert. Om meer specifiek te gaan focussen we ons op twee manieren van studeren namelijk Retrieval practice  en een klassieke leermethode.Het onderscheid van deze twee methodes zit in de manier waarop men de informatie opneemt. Bij Retrieval practice maken we gebruik van zogenaamde testen. Hierbij bestudeert de persoon een tekst eenmaal en probeert hij vervolgens de informatie op te halen door middel van neer te schrijven wat hij zich nog herinnert. Dit contrasteert zich met klassiek leren waarbij men de tekst verschillende keren bestudeert zonder deze testen. Uit eerder onderzoek door  Roediger en Karpicke is gebleken dat studenten die aan Retrieval practice doen instaat zijn om langer informatie vast te houden dan studenten die aan klassiek studeren doen, het zogenaamde testing effect. Dit effect gaan we dan ook in ons eigen onderzoek proberen reproduceren.\\
 \par
 \noindent
-
 Het is een vaak vernoemde mantra dat studenten en volwassenen te weinig slaap krijgen. Hoe zwaar weegt slaap echter door op het verwerkingsprocess van informatie? Deze studie richt zich op het belang van slaap en gaat door middel van statische gegevens op een empirische manier de effecten van slaap gaan bestuderen. Hierbij gebruiken we als richtlijn het onderzoek uitgevoerd door Potkin \& Bunney. We proberen de bevindingen van dit onderzoek te reproduceren alsook kritisch te gaan bekijken.\\
 \par
 \noindent
-
 Buiten de invloed van slaap bestuderen we ook het effect van muziek bij het leerproces. Veel adolescenten studeren met muziek of achtergrondlawaai. Over de jaren heen zijn er ook veel studies geweest over de effecten van muziek op studieprestatie. Meerbepaald de studies uitgevoerd door smith \& merris (1977) en Arielle S Dolegui (2013). Deze studies wijzen uit dat muziek een nadelig effect heeft op studeren en andere taken die een hoge cognitieve prestatie verwachten (wiskunde, …). Men moet hier echter wel bij vermelden dat zogenaamde ‘stimulative music’ of muziek met teksten, gitaar en andere luide instrumenten veel meer een negatief effect heeft dan rustige muziek (zoals klassieke muziek) ook wel ‘sedative music’ genoemd.\\
 \par
 \noindent
-
 Om ons onderzoek aldus te gaan samenvatten gaan we gebruik maken van drie variabelen om conclusies te gaan trekken namelijk muziek, de uren van slaap en retrieval practice ten opzichte van klassieke studiemethodes. We verwachten dat studenten die een goede nachtrust hebben gehad (om en bij de 8 uur) beter gaan scoren dan degene met een slechtere nachtrust. We verwachten dat de groep die naar muziek luistert slechter scoort dan de groep zonder muziek en tot slot verwachten we ook zoals de studies van Roediger dat we het testing effect gaan waarnemen.
 
 
@@ -186,9 +191,6 @@ Het doel van deze studie was om te kijken of retrieval practice wel degelijk pos
 
 Als we kijken naar de resultaten van het onderzoek zien we dat Retrieval Practice het veel beter doet dan de gewone klassieke studiemethode. Echter de resultaten voor muziek en slaap zijn niet echt wat we verwacht hadden. Het verschil is gewoon te klein of het tegenovergestelde van wat we verwacht hadden en van de resultaten van <artikels>. We denken dat dit door de kwaliteit van het onderzoek komt. De tekst was vrij kort en ging over iets waar de meeste mensen al (veel) kennis over hadden, we denken dus dat het iets te makkelijk was, wat een verklaring is waarom de resultaten zo pover zijn. Ook zal het feit dat de deelnemers allemaal studenten waren voor dit vak, waarvan misschien een groot deel niet met alle positieve zin heeft deelgenomen, een invloed hebben. De verbetersleutel was volgens ons ook niet optimaal, er waren bijvoorbeeld 3 punten te verdienen met informatie over gemeenschappelijke voorouders (dit kon bijvoorbeeld samengenomen worden). Er was ook maar een week tussen de twee sessies, terwijl Retrieval Practice meer beloont als het over langere tijdsperioden gaat om informatie te onthouden. Kortom, we zijn sterk van mening dat het onderzoek veel beter kon en dat de resultaten hiervan zeker niet beslissend zijn en met een korrel zout moeten genomen worden, als je kijkt naar de resultaten van <onze artikels> waar (de invloed van) slaap en muziek beter bestudeerd werd.
 
-
-
-\section{Dankwoord}
 %------------------------------------------------------------------------------
 % Referentielijst
 %------------------------------------------------------------------------------
