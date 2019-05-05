@@ -77,28 +77,100 @@ Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoor
 
 inleiding
 
-\section{Overzicht literatuur}
+
 
 % Refereren naar de literatuur kan met:
 % \autocite{BIBTEXKEY} -> (Auteur, jaartal)
 % \textcite{BIBTEXKEY} -> Auteur (jaartal)
-overzicht
 
-\section{Methodologie}
+\section{Hypothese}
 
-methodologie
+\subsection{Variabelen}
 
-\section{Experimenten}
+Aangezien onze hypothese in de literatuurstudie enkele variabelen had die niet zijn opgenomen geweest in het experiment hebben we deze toch aanzienlijk moeten aanpassen.
 
-experimenten
+We hebben uiteindelijk beslist om het originele onderzoek, of Retrieval Practice al dan niet een effect heeft of niet uit te voeren, samen met het effect van muziek hierop en verder hebben we ook beslist om het effect van slaap op de uiteindelijke scores te bekijken.
 
-\section{Analyse resultaten}
+\subsubsection{Hypothese omtrent slaap hoeveelheid}
 
-analyse resultaten
+INSERT GRAFIEK
 
-\section{Conclusie}
+Zoals je kan afleiden uit de boxplot uit week 1 omtrent slaap hoeveelheid verwachten we duidelijk dat mensen met een tekort aan slaap veel minder sterk zijn in het opnemen van nieuwe informatie. Maar in week 2 verwachten we eigenlijk dat het verschil iets minder groot zal zijn indien men iets minder slaap dan nodig heeft gehad, dit omdat men reeds het onderwerp heeft ingestudeerd op een voorgaand moment en men de kennis dus reeds heeft, men moet het enkel nog oproepen. Dit baseerden we op het artikel van Potkin \& Bunney
 
-conclusie
+
+\subsubsection{Hypothese omtrent muziek en Retrieval Practice}
+
+INSERT GRAFIEK
+
+In week 1 verwachten we dat mensen die niet naar muziek luisteren het aanzienlijk beter doen dan mensen die wel naar muziek luisteren, dit gestaafd op het artikel van Arielle S. Dolegui, het effect van retrieval practice in vergelijking met geen retrieval practice is hier nog niet zichtbaar.
+
+In week 2 verwachten we dan weer meer een onderscheid tussen retrieval practice en geen retrieval practice, omdat men enkel kennis moet oproepen denken we dat muziek hier dus een kleiner effect heeft dan de invloed van retrieval practice. We denken dus dat retrieval practice hier zal uitblinken zoals je ook kan zien op de grafieken. Dit denken we vooral door het originele artikel van Roediger \& Koepricke
+\section{Data}
+
+Welke data hebben we nu juist onderzocht? Wel, zoals voordien vermeld hebben we eerst en vooral gekeken naar de verschillen tussen het niet gebruiken van “Retrieval Practice” en het wel gebruiken van deze methode, hierbij hebben we ook het effect van Muziek toegevoegd. Verder hebben we ook een apart onderzoek gedaan waarbij we opzoek gingen naar het effect dat de hoeveelheid slaap heeft op scores, losstaand van alle andere variabelen.
+
+Eerst en vooral hebben we dus een script geschreven in R om het effect van slaap hoeveelheid te testen, hierbij hebben we drie verschillende ranges gedefinieerd: 0 tot 5 uur slaap, 5 tot 8 uur slaap en meer dan 8 uur slaap. 
+
+Verder hebben we ook boxplots gemaakt waarin we scores in 4 groepen onderverdeeld hebben, zo zien we een boxplot met scores waarbij men enkel naar muziek heeft geluisterd, een boxplot waarbij men naar muziek luisterde en Retrieval Practice heeft toegepast, een boxplot waarbij men enkel retrieval practice gebruikte en een boxplot met de overige scores
+\section{Verklaringen}
+
+\subsection{Slaap hoeveelheid}
+
+Hierbij kwamen we tot de volgende grafieken voor week 1 en week 2:
+
+Insert R
+
+
+Hieruit kun je verschillende dingen afleiden, namelijk:
+
+\subsubsection{Het effect van slaap op het instuderen van de leerstof. (Week 1)}
+
+Hier kun je duidelijk zien dat slaap geen grote invloed heeft, maar er wel degelijk een invloed is, zo zie je dat het merendeel van de scores van mensen met minder dan 5 uur slaap toch iets lager liggen dan van mensen die voldoende slaap gehad hebben. Dit waarschijnlijk omdat het instuderen toch net iets moeilijker gaat als je weinig slaap hebt gehad
+
+\subsubsection{Het effect van slaap op het behouden van ingestudeerde leerstof. (Week 2)}
+
+Bij de tweede week is dit verschil nagenoeg volledig weggewerkt, voor het oproepen van kennis die men dus al heeft ingestudeerd maakt de hoeveelheid slaap dus eigenlijk niet echt uit.
+
+\subsection{Retrieval Practice en Effect van Muziek}
+
+Deze werden idem aan de voorgaande dataset ook geplot in R aan de hand van verschillende boxplots voor zowel week 1 als week 2
+
+\subsubsection{De mate waarin je leerstof voor korte termijn kunt instuderen (Week 1)}
+
+Eerst en vooral bekijken we welke invloed zowel Retrieval practice als Muziek hebben op het instuderen van leerstof.
+
+\begin{itemize}
+    \item Eerst en vooral hebben we het gebruik van muziek tegenover geen muziek.
+    Hieruit kunnen we verrassend genoeg toch afleiden dat muziek een positief effect lijkt te hebben op het instuderen van de leerstof, aangezien de scores voor mensen die muziek gebruikt hebben om het gevraagde in te studeren een hogere score hebben, al dan niet met retrieval practice of niet, dan mensen die niet naar muziek geluisterd hebben.
+    \item Hierna bekijken we het verschil tussen Retrieval Practice tegenover geen Retrieval Practice.
+    Hier ziet men in de eerste testweek geen verschil tussen het al dan niet gebruiken van Retrieval Practice, tot dusver komt dit dus nog overeen met het originele artikel van Karpicke en Roediger waarop dit onderzoek gestaafd is.
+    
+\end{itemize}
+
+\subsubsection{De mate waarin je kennis behoud op iets langere termijn (Week 2)}
+
+Als laatste bestuderen we de grafiek voor de tweede week en kijken we bij welke methodes je kunt zien dat er toch een groter behoud aan kennis is.
+
+
+\begin{itemize}
+    \item Het gebruik van muziek tegenover geen muziek. Bij de tweede week is het “antwoord” toch niet meer zo eenduidig als het op muziek of geen muziek aankomt. Het verschil is aanzienlijk gezakt, wat toch blijk geeft dat indien men naar muziek luisterde in de eerste week men iets minder goed gememoriseerd heeft. Terwijl mensen die niet naar muziek luisteren wel net iets beter erin geslaagd zijn om hun kennis te behouden.
+    
+    Men ziet ook dat het al dan niet luisteren naar muziek niet echt een effect heeft op het oproepen van deze ingestudeerde kennis.
+    
+    \item Retrieval Practice tegenover geen Retrieval Practice. Hier is er ondertussen wel een duidelijk verschil zichtbaar, men ziet dat mensen die retrieval practice gebruikt hebben in de eerste week nu wel aanzienlijk beter scoren dan mensen die dit niet gedaan hebben, met uitzondering van mensen die geen retrieval practice hebben toegepast maar wel naar muziek hebben geluisterd, die even goed scoren als de groep die retrieval practice heeft gebruikt. 
+    
+    Hieruit kun je afleiden dat het al zeker beter is om retrieval practice toe te passen bij het instuderen, dan helemaal niets, wat overeenkomt met het originele artikel van Karpicke \& Roediger, maar dat het gebruik van enkel muziek (in dit geval erg rustige mozart) ook geen nefast effect heeft op het behouden van eerder verworven kennis.
+    
+\end{itemize}
+    
+
+\section{Resultaten \& Conclusie }
+
+Het doel van deze studie was om te kijken of retrieval practice wel degelijk positieve invloed heeft op het onthouden van informatie (op lange termijn) en of muziek op zijn beurt nadelige effecten heeft erop. In totaal waren er 240 deelnemers in het onderzoek. Elke deelnemer moest een tekst van ongeveer een anderhalve A4 pagina lang lezen en hiervan zoveel mogelijk informatie onthouden. De deelnemers werden initieel in 2 groepen verdeeld: een groep die aan retrieval practice deed (en de methode STST toepast) en een groep die gewoon op het einde pas een test deed (SSST). Vervolgens werden deze 2 groepen verder verveeld in enerzijds een groep die naar muziek (klassiek) luistert en anderzijds een groep die niet naar muziek luistert. Tot slot houden we ook rekening met het aantal uur dat iemand geslapen heeft.
+
+Als we kijken naar de resultaten van het onderzoek zien we dat Retrieval Practice het veel beter doet dan de gewone klassieke studiemethode. Echter de resultaten voor muziek en slaap zijn niet echt wat we verwacht hadden. Het verschil is gewoon te klein of het tegenovergestelde van wat we verwacht hadden en van de resultaten van <artikels>. We denken dat dit door de kwaliteit van het onderzoek komt. De tekst was vrij kort en ging over iets waar de meeste mensen al (veel) kennis over hadden, we denken dus dat het iets te makkelijk was, wat een verklaring is waarom de resultaten zo pover zijn. Ook zal het feit dat de deelnemers allemaal studenten waren voor dit vak, waarvan misschien een groot deel niet met alle positieve zin heeft deelgenomen, een invloed hebben. De verbetersleutel was volgens ons ook niet optimaal, er waren bijvoorbeeld 3 punten te verdienen met informatie over gemeenschappelijke voorouders (dit kon bijvoorbeeld samengenomen worden). Er was ook maar een week tussen de twee sessies, terwijl Retrieval Practice meer beloont als het over langere tijdsperioden gaat om informatie te onthouden. Kortom, we zijn sterk van mening dat het onderzoek veel beter kon en dat de resultaten hiervan zeker niet beslissend zijn en met een korrel zout moeten genomen worden, als je kijkt naar de resultaten van <onze artikels> waar (de invloed van) slaap en muziek beter bestudeerd werd.
+
+
 
 \section{Dankwoord}
 

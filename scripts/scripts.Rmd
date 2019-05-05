@@ -20,15 +20,16 @@ scores_Week2 <- ozt$score_2
 slaaphoeveelheid1 <- ozt$uren_slaap_1
 slaaphoeveelheid2 <- ozt$uren_slaap_2
 
-test <- ifelse(slaaphoeveelheid1<5, "0-5",
-               ifelse(slaaphoeveelheid1>=5 & slaaphoeveelheid1<=8, "5-8",
+test <- ifelse(slaaphoeveelheid1<=5, "0-5",
+               ifelse(slaaphoeveelheid1>5 & slaaphoeveelheid1<=8, "5-8",
                       ifelse(slaaphoeveelheid1>8, "8+",NA))
                )
 
-test2 <- ifelse(slaaphoeveelheid2<5, "0-5",
-               ifelse(slaaphoeveelheid2>=5 & slaaphoeveelheid2<=8, "5-8",
+test2 <- ifelse(slaaphoeveelheid2<=5, "0-5",
+               ifelse(slaaphoeveelheid2>5 & slaaphoeveelheid2<=8, "5-8",
                       ifelse(slaaphoeveelheid2>8, "8+",NA))
                )
+
 
 #test3 <- ifelse(slaaphoeveelheid1<5, "0-5", NA)
 #test4 <- ifelse(slaaphoeveelheid1>5 &slaaphoeveelheid1<=8, "5-8", NA)
@@ -41,14 +42,21 @@ boxplot(scores_Week2~test2, data=ozt, xlab="Aantal uur slaap", ylab="scores", ma
 #boxplot(scores_Week1~test4, xlab="Aantal uur slaap", ylab="scores", main="test2")
 #boxplot(scores_Week1~test5, xlab="Aantal uur slaap", ylab="scores", main="test3")
 
-#scorestest <- subset(scores_Week1, slaaphoeveelheid1 <5)
-#scorestest1 <- subset(scores_Week1, slaaphoeveelheid1 >=5 & slaaphoeveelheid1 <=8)
-#scorestest2 <- subset(scores_Week1, slaaphoeveelheid1 >8)
+scorestest <- subset(scores_Week1, slaaphoeveelheid1 <5)
+scorestest1 <- subset(scores_Week1, slaaphoeveelheid1 >=5 & slaaphoeveelheid1 <=8)
+scorestest2 <- subset(scores_Week1, slaaphoeveelheid1 >8)
 
-#median(scorestest)
-#median(scorestest1)
-#median(scorestest2)
+summary(scorestest)
+summary(scorestest1)
+summary(scorestest2)
 
+scorestest1 <- subset(scores_Week2, slaaphoeveelheid2 <5)
+scorestest11 <- subset(scores_Week2, slaaphoeveelheid2 >=5 & slaaphoeveelheid2 <=8)
+scorestest21 <- subset(scores_Week2, slaaphoeveelheid2 >8)
+
+summary(scorestest1)
+summary(scorestest11)
+summary(scorestest21)
 
 
 ```
@@ -58,13 +66,13 @@ boxplot(scores_Week2~test2, data=ozt, xlab="Aantal uur slaap", ylab="scores", ma
 Dit zijn de grafieken waarin we bekijken wat het effect is van muziek op zowel studenten die met en zonder retrieval practise gestudeerd hebben.
 
 ```{r ozt2}
-scores_Week1 <- ozt2$score_1
-scores_Week2 <- ozt2$score_2
+scores_Week1 <- ozt$score_1
+scores_Week2 <- ozt$score_2
 
-rt <- trimws(ozt2$rt)
+rt <- trimws(ozt$rt)
 
 
-muziek <- trimws(ozt2$muziek)
+muziek <- trimws(ozt$muziek)
 
 
 ScoresMandRt <- subset(scores_Week1, muziek=="Ja" & rt=="Ja")
@@ -72,12 +80,23 @@ ScoresMNoRt<- subset(scores_Week1, muziek=="Ja" & rt=="Nee")
 ScoresNoMandRt <- subset(scores_Week1, muziek=="Nee" & rt=="Ja")
 ScoresNoMNoRt<- subset(scores_Week1, muziek=="Nee" & rt=="Nee")
 
+summary(subset(scores_Week1, muziek=="Ja" & rt=="Ja"))
+summary(subset(scores_Week1, muziek=="Ja" & rt=="Nee"))
+summary(subset(scores_Week1, muziek=="Nee" & rt=="Ja"))
+summary(subset(scores_Week1, muziek=="Nee" & rt=="Nee"))
+
 boxplot(ScoresMandRt,ScoresMNoRt,ScoresNoMandRt,ScoresNoMNoRt, main = "Effect van Muziek op effectiviteit van Retrieval Practise Week 1", ylab="scores", names = c("M & Rt", "M", "Rt", "nothing"))
 
 ScoresMandRt2 <- subset(scores_Week2, muziek=="Ja" & rt=="Ja")
 ScoresMNoRt2<- subset(scores_Week2, muziek=="Ja" & rt=="Nee")
 ScoresNoMandRt2 <- subset(scores_Week2, muziek=="Nee" & rt=="Ja")
 ScoresNoMNoRt2<- subset(scores_Week2, muziek=="Nee" & rt=="Nee")
+
+summary(subset(scores_Week2, muziek=="Ja" & rt=="Ja"))
+summary(subset(scores_Week2, muziek=="Ja" & rt=="Nee"))
+summary(subset(scores_Week2, muziek=="Nee" & rt=="Ja"))
+summary(subset(scores_Week2, muziek=="Nee" & rt=="Nee"))
+
 
 boxplot(ScoresMandRt2,ScoresMNoRt2,ScoresNoMandRt2,ScoresNoMNoRt2, main = "Effect van Muziek op effectiviteit van Retrieval Practise Week 2 ", ylab="scores", names = c("M & Rt", "M", "Rt", "nothing"))
 
